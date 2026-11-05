@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarladan Pakete | 3 BITES - Doğal Süreç</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="process-page">
+
+    <header class="pop-header">
+        <a href="index.html" class="brand-logo">
+            <span class="color-3">3</span><span class="color-bite">BITE</span>
+        </a>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="magaza.html">Mağaza</a></li>
+                <li><a href="sustainability.html" class="active">Tarladan Pakete</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+                <li class="mobile-only"><a href="sepet.html" class="shop-badge" style="margin:0;">🛒 Sepete Git</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="cart-container desktop-only" onclick="location.href='sepet.html'">
+                <span class="cart-icon">🛒</span>
+                <span id="cart-count" class="cart-badge">0</span>
+            </div>
+            <label for="menu-toggle" class="hamburger">
+                <span></span><span></span><span></span>
+            </label>
+        </div>
+    </header>
+
+    <section class="full-screen-hero" style="background-image: url('images/tarla-background.png');">
+        <div class="hero-text-box reveal-up">
+            <div class="shop-badge">#TopraktanSofraya</div>
+            <h1 class="shocker-title">SÜRECİ <br> <span class="outline-pink">HİSSET.</span></h1>
+            <p>Afyonkarahisar’ın yerel haşhaş tarlalarından başlayan, şeffaf ve tertemiz bir yolculuk.</p>
+        </div>
+    </section>
+
+    <main class="reveal-up">
+        <section class="process-steps-grid">
+            
+            <div class="step-card bg-mint-pop">
+                <div class="icon">🚜</div>
+                <h3>Yerel Seçim</h3>
+                <p>İmza ürünümüz Afyon haşhaşını, doğrudan Erenler bölgesindeki çiftçilerimizden adil ticaretle tedarik ediyoruz.</p>
+            </div>
+
+            <div class="step-card bg-ivory-pop">
+                <div class="icon">❄️</div>
+                <h3>Soğuk Pres</h3>
+                <p>Barlarımız, besin değerlerini korumak adına ısıl işlem görmeden preslenir ve koruyucu içermez.</p>
+            </div>
+
+            <div class="step-card bg-purple-pop">
+                <div class="icon">🥖</div>
+                <h3>Hassas Pişirme</h3>
+                <p>Krakerlerimiz, nohut ve mercimek unuyla harmanlanıp geleneksel yöntemlerle fırınlanır.</p>
+            </div>
+
+            <div class="step-card bg-peach-pop">
+                <div class="icon">♻️</div>
+                <h3>Sıfır Atık</h3>
+                <p>Gezegenimize saygı duyuyoruz! %100 geri dönüştürülebilir ve çevre dostu paketleme kullanıyoruz.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="pop-footer">
+        <div class="footer-grid">
+            <div class="brand-col">
+                <a href="index.html" class="brand-logo" style="text-decoration: none;">
+                    <span class="color-3">3</span><span style="color:white;">BITE</span>
+                </a>
+                <p>Enerjini doğadan al! 3 kadın girişimcinin eseri, %100 katkısız vegan atıştırmalıklar.</p>
+            </div>
+            <div class="link-col">
+                <h4>Keşfet</h4>
+                <ul>
+                    <li><a href="magaza.html">Mağaza</a></li>
+                    <li><a href="sustainability.html">Üretim Süreci</a></li>
+                </ul>
+            </div>
+            <div class="contact-col">
+                <h4>Bize Ulaşın</h4>
+                <ul>
+                    <li>📍 Erenler Mah. / Afyonkarahisar</li>
+                    <li>🕒 Pzt - Cuma: 09:00 - 18:00</li>
+                    <li>✉️ merhaba@3bite.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 3 BITE. Her ısırıkta gerçek gıda.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeBg(color) { document.body.style.backgroundColor = color; }
+        function resetBg() { document.body.style.backgroundColor = "#FFF8F0"; }
+    </script>
+
+</body>
+</html>

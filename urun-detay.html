@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha & Yeşil Çay Bar | 3 BITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="product-detail-page bg-matcha-pop">
+
+    <header class="pop-header">
+        <a href="index.html" class="brand-logo"><span class="color-3">3</span><span class="color-bite">BITE</span></a>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="magaza.html">Mağaza</a></li>
+                <li><a href="sustainability.html">Tarladan Pakete</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+                <li class="mobile-only"><a href="sepet.html" class="shop-badge" style="margin:0;">🛒 Sepete Git</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="cart-container desktop-only" id="main-cart" onclick="location.href='sepet.html'">
+                <span class="cart-icon">🛒</span><span id="cart-count" class="cart-badge">0</span>
+            </div>
+            <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        </div>
+    </header>
+
+    <div class="reveal-up" style="padding-top: 100px;">
+        
+        <main class="product-main-container">
+            <div class="product-gallery">
+                <div class="main-image-box">
+                    <img src="images/macha.png" alt="Matcha Bar" class="detail-img">
+                </div>
+            </div>
+
+            <div class="product-info-box">
+                <div class="shop-badge">#OdaklanVeCanlan</div>
+                <h1 class="shocker-title" style="font-size: 3.5rem;">MATCHA & <br><span class="outline-pink">YEŞİL ÇAY</span></h1>
+                <p class="product-desc">Japonya'nın en taze matcha yaprakları, Afyonkarahisar'ın yerel üretimiyle birleşti. Soğuk pres yöntemiyle hazırlanan bu bar, güne zinde başlaman için ihtiyacın olan tek şey. Koruyucu yok, sır yok!</p>
+                
+                <div class="price-and-cart">
+                    <span class="detail-price">₺.00</span>
+                    <div class="item-quantity-box" style="width: auto;">
+                        <button class="qty-btn">-</button>
+                        <span>1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+                
+                <button class="btn-submit-v2" onclick="animateToCart(this, 'images/bar-matcha.png')" style="margin-top: 20px; font-size: 1.2rem;">SEPETE FIRLAT 🛒</button>
+                
+                <div class="trust-badges">
+                    <span>🌱 %100 Vegan</span>
+                    <span>🚫 İlave Şeker Yok</span>
+                    <span>🌾 Glutensiz</span>
+                </div>
+            </div>
+        </main>
+
+        <section class="ingredients-nutrition-section">
+            <div class="ingredients-box">
+                <h2>SADECE 4 MALZEME.</h2>
+                <p style="font-weight: 600;">Okuyamadığın hiçbir kimyasalı paketimize koymuyoruz. İşte dürüst içeriğimiz:</p>
+                <div class="ingredient-items">
+                    <div class="ing-item"><span class="emoji">🍵</span> <strong>Japon Matcha Tozu</strong> (Doğal antioksidan)</div>
+                    <div class="ing-item"><span class="emoji">🌿</span> <strong>Yeşil Çay Ekstresi</strong> (Temiz kafein)</div>
+                    <div class="ing-item"><span class="emoji">🌴</span> <strong>Hurma Özü</strong> (Doğal tatlandırıcı)</div>
+                    <div class="ing-item"><span class="emoji">🌰</span> <strong>Çiğ Badem</strong> (Bitkisel protein ve lif)</div>
+                </div>
+            </div>
+
+            <div class="nutrition-box">
+                <h2>BESİN DEĞERLERİ</h2>
+                <p style="font-weight: 600;">1 Paket (45g) İçin:</p>
+                <table class="pop-table">
+                    <tr><td>Enerji (Kalori)</td><td>185 kcal</td></tr>
+                    <tr><td>Karbonhidrat</td><td>18 g</td></tr>
+                    <tr><td>- Doğal Şekerler</td><td>12 g</td></tr>
+                    <tr><td>Lif</td><td>5 g</td></tr>
+                    <tr><td>Protein</td><td>6 g</td></tr>
+                    <tr><td>Yağ</td><td>8 g</td></tr>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="pop-footer" style="margin-top: 0;">
+        <div class="footer-grid">
+            <div class="brand-col">
+                <a href="index.html" class="brand-logo" style="text-decoration: none;"><span class="color-3">3</span><span style="color:white;">BITE</span></a>
+                <p>Afyonkarahisar'dan dünyaya temiz enerji.</p>
+            </div>
+            <div class="contact-col">
+                <h4>Hızlı İletişim</h4>
+                <ul style="list-style:none;">
+                    <li>📍 Erenler Mah. / Afyonkarahisar</li>
+                    <li>✉️ merhaba@3bite.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let cartCount = 0;
+        function animateToCart(button, imgSrc) {
+            cartCount++;
+            const cartCountBadge = document.getElementById('cart-count');
+            const cart = document.getElementById('main-cart');
+            const flyingImg = document.createElement('img');
+            flyingImg.src = imgSrc; flyingImg.className = "flying-item";
+            const btnRect = button.getBoundingClientRect();
+            flyingImg.style.top = btnRect.top + 'px'; flyingImg.style.left = btnRect.left + 'px';
+            document.body.appendChild(flyingImg);
+            const cartRect = cart.getBoundingClientRect();
+            setTimeout(() => { flyingImg.style.top = cartRect.top + 'px'; flyingImg.style.left = cartRect.left + 'px'; flyingImg.style.width = '10px'; flyingImg.style.height = '10px'; flyingImg.style.opacity = '0'; }, 50);
+            setTimeout(() => { flyingImg.remove(); cartCountBadge.innerText = cartCount; cart.style.transform = 'scale(1.5)'; setTimeout(() => cart.style.transform = 'scale(1)', 200); }, 850);
+        }
+    </script>
+
+</body>
+</html>
