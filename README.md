@@ -1,5 +1,7 @@
 # 3BİTES — Web Sitesi V2
 
+🌐 Canlı Web Sitesi: https://melikenazsamiloglu-cmd.github.io/3bites-website-v2/
+ Kopyala
 **Geliştiren:** Melike Naz Şamiloğlu  
 **Proje türü:** Üniversite dersi kapsamında geliştirilen web tasarımı prototipi  
 **Sürüm:** V2 — İkinci web tasarımı
