@@ -4,7 +4,7 @@
 **Proje türü:** Üniversite dersi kapsamında geliştirilen web tasarımı prototipi  
 **Sürüm:** V2 — İkinci web tasarımı
 
-melikenazsamiloglu-cmd.github.io/3bites-website-v2/
+
 ## Proje hakkında
 
 3BİTES, atıştırmalık ürün konsepti için hazırlanmış çok sayfalı bir web sitesi tasarımıdır. Bu depo, projenin ikinci web tasarım sürümünü içerir. İlk sürüm ve daha sonra üzerinde çalışılan gerçek girişim planları bu depodan ayrıdır.
